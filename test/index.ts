@@ -19,11 +19,9 @@
 
 */
 
-import testEulerOps from './topo/eulerops'
-import testDelaunayHelper from './delaunay/helper'
+import testEulerOps from './eulerops'
 
 window.onload = () => {
-
 
   let qunitDiv = document.createElement('div');
   qunitDiv.setAttribute('id', 'qunit');
@@ -34,5 +32,4 @@ window.onload = () => {
   document.body.appendChild(qunitFixtureDiv);
 
   testEulerOps();
-  testDelaunayHelper();
 }

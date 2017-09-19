@@ -19,7 +19,7 @@
 
 */
 
-import * as topo from '../../src/topo'
+import * as topo from '../src'
 import {arr} from '@bluemath/common'
 
 export default function testEulerOps() {

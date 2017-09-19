@@ -20,48 +20,13 @@
 */
 
 import {NDArray,arr} from '@bluemath/common'
-import {Topology} from '../src/topo'
-import {Triangulation} from '../src/delaunay'
 
-import * as topo from '../src/topo'
+import * as topo from '../src'
 
 let Viz = require('viz.js');
 
-function testTopology() {
-  let tp = new Topology();
-  tp.fromPolygon(new NDArray([
-    [50,50],
-    [200,100],
-    [350,50],
-    [350,350],
-    [200,400],
-    [50,350]
-  ]));
-  document.body.innerHTML = tp.toSVG();
-}
-
-function testTriangulation() {
-  let tri = Triangulation.fromTriangulation(
-    [20,20, 200,20, 100,100], // points
-    [0,1,2], // triangles
-    // edges
-    [
-      [0,1, 0],
-      [1,2, 0],
-      [2,0, 0]
-    ],
-    // vertices
-    [
-      [0,1], // incident edges, TODO:orientation?
-      [1,2],
-      [2,0]
-    ]
-  );
-  document.body.innerHTML = tri.toSVG();
-}
-
 function testEulerOpsBodyViz() {
-  topo.IDManager.init(['B','V','E','F','L','HE']);
+  topo.IDManager.init();
   let pA = arr([100,100]);
   let pB = arr([200,100]);
   let pC = arr([200,200]);

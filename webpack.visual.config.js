@@ -1,7 +1,7 @@
 module.exports = {
     entry: "./test/visual.ts",
     output: {
-        filename: "./build/bluemath-compgeom-visual.js",
+        filename: "./build/bluemath-topo-visual.js",
     },
 
     // Enable sourcemaps for debugging webpack's output.
