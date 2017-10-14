@@ -56,5 +56,9 @@ export declare class EulerOps {
      * (Ring = Loop in this library)
      */
     static KEMR(face: Face, v1: Vertex, v2: Vertex): Loop;
+    /**
+     * Make Edge Kill Ring
+     * (Ring = Loop in this library)
+     */
     static MEKR(faceFrom: Face, fromHEV0: Vertex, fromHEV1: Vertex, faceTo: Face, toHEV0: Vertex, toHEV1: Vertex): Edge;
 }
