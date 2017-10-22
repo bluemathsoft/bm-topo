@@ -1,6 +1,6 @@
 {
   "name": "@bluemath/topo",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Topology module of BlueMath",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
